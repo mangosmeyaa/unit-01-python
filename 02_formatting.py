@@ -14,11 +14,34 @@ else:
     
 
 #Task 2: 
-user_input = input("Enter something: ")
+#User is just asked to type something.
 
+user_input = input("Enter something: ")
+#If user types an empty string, it's marked as invalid
 if user_input == "":
     print("invalid")
 else:
     print("valid")
+#If not, it's valid
 
 #Task 3:
+
+
+#Task 4:
+
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+
+print("Name:", name)
+print("Age:", age)
+
+
+#Task 5:
+num1 = float(input("Enter the first float: "))
+num2 = float(input("Enter the second float: "))
+
+if num2 != 0:
+    quotient = round(num1 / num2, 1)  # Round to 1 decimal place
+    print("Quotient (rounded to 1 decimal):", quotient)
+else:
+    print("Cannot divide by zero.")
