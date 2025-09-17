@@ -27,7 +27,8 @@ print(my_list)
 print("-----------------")
 
 print("Task 5")
-
+my_list.append("Cars", "Dogs")
+print("my_list")
 
 
 
