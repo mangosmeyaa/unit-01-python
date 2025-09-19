@@ -1,7 +1,7 @@
-#Task 1: I created a list of 4 items.
-my_list = ["apple", "banana", "cherry", "date"]
-print("Task 1:", my_list)
-#Printed my elements to the console.
+print("Task 1")
+#Made my list of 4 items of my choice.
+my_list = ["Bananas", "Tomatoes", "", False]
+print(my_list)
 
 print("        ")
 
@@ -26,12 +26,11 @@ print("Task 4:", my_list)
 
 print("        ")
 
-#Task 5: I appended 3 more items to the list which just means adding 3 more things. But instead of using the append I used the extend method. Extending is when you add multiple items to a list at one time.
-my_list.extend(["fig", "grape", "peach"])
-print("Task 5:" , my_list)
-#Printed to the console.
-
-print("        ")
+print("Task 5")
+my_list = ["1", "2", "3"]
+my_list.append("4")
+my_list.append("6")
+print(my_list)
 
 #Task 6: I am now going to delete a single element but at a specific index.
 del my_list[0]
