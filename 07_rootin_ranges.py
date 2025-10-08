@@ -1,34 +1,38 @@
-
 # Exercise 1:
-
 print()
 print("Task 1")
 
-# I used the range function in the "for" statement to print numbers from 1 to 10.
-for x in range(1, 11):
-    print(x)
-print()
+# For loop is going to count numbers one through ten, except for 11 since it is exclusive.
+for num in range(1, 11):
+    print(num)
+
+print()  # spacingg.
+
 
 # Exercise 2:
 print()
 print("Task 2")
-# Used range function in the "for" statement to count by 10s from 900 to 1000 as 10 is the third part of the range function which is the step value
-for x in range(900, 1001, 10):
-    print(x)
-print()
+
+# Count by 10s from 900 to 1000, so we choose these numbers making sure 1,001 is exclusive so it stops at 1,000.
+for value in range(900, 1001, 10):
+    print(value)
+
+print()  # some more spacing
+
 
 # Exercise 3:
-
 print()
 print("Task 3")
-# Used range function in the "for" statement to count by 9s from 1 to 100 as 9 is the third part of the range function which is the step value
-for x in range(1, 101, 9):
-    print(x)
 
-# Exercise 4:
+# Count from 1 to 100 by 9s making sure to stop at 100.
+for count in range(1, 101, 9):
+    print(count)
+
+print()  # more spacingg
+
 
 print()
-print("TASK 4")
+print("Task 4")
 # Created a total variable to count the sum of all numbers from 1 to 10
 total = 0
 # Used range function in the "for" statement to loop through numbers from 1 to 10 and add them to the total variable
@@ -38,13 +42,12 @@ for x in range(1, 11):
 print("sum:", total)
 print()
 
-# Excercise 5:
 
+rows = 5
 
-rows = 5 
 for i in range(rows):
-     for j in range(i + 1):
-         print('*', end=' ')
-     print()
+    for j in range(i + 1):
+        print('*', end=' ')
+    print()
 
-
+# The output shows a right-angled triangle made of stars sort of. Each row adds one more star than the previous row. The inner loop controls the amount of stars in each while the outer is controlling the  number of rows which is 5.
