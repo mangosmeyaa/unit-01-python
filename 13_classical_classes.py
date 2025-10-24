@@ -5,19 +5,26 @@ Then, write a method within the class to introduce the person with their name an
 
 Create a new object using this new class, and call the method you created.
 """
+
 print("Task 1")
-#Created a class called "Person", used the init method 
+#Created a class called "Person", used the init method.
 class Person:
-    def __init__ (self, name, age):
-     self.name = name
-     self.age = age
-
+    def __init__(self, name, age):
+        self.name = name #Setting the attributes name and age in both lines.
+        self.age = age
+#This is the method to introduce the person.
     def introduce(self):
-        print(f"Hey, my name is {self.name} and I am {self.age} years old.")
+        print("Hello, my name is", self.name, "and I am", self.age, "years old.")
 
-person1 = Person("Wazih", 17)
+#Created an object named wazih, and gave it an age of 17.
+wazih = Person("Wazih", 17)
 
-person1.introduce()
+#Prints the name of the attribute of the object, name and age.
+print(wazih.name)
+print(wazih.age)
+
+#This calls the introduce method to print out the entire introduction.
+wazih.introduce()
 
 """
 Task 2: Animals Speak
@@ -29,27 +36,6 @@ Create objects using these subclasses and call the speak method.
 """
 print()
 print("Task 2")
-# Task 2: Animals Speak
-
-class Animal:
-    def speak(self):
-        pass  # empty method
-
-class Dog(Animal):
-    def speak(self):
-        print("Woof!")
-
-class Cat(Animal):
-    def speak(self):
-        print("Meow!")
-
-# test
-dog1 = Dog()
-cat1 = Cat()
-
-dog1.speak()
-cat1.speak()
-
 
 """
 Task 3: Banking
