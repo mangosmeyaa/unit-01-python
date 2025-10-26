@@ -36,7 +36,35 @@ Create objects using these subclasses and call the speak method.
 """
 print()
 print("Task 2")
+#Made the base class.
+class Animal:
+    speak = ''
+    def __init__(self, name):
+     self.name = name
+     
+#This is the first subclass "Dog".
+class Dog: 
+    speak = 'wolf'
+   
 
+    
+     
+#This are the variables just naming what is coming out of the speak method.
+Meya1 = Animal("Dog: WOOF, WOOF!!" ) 
+print(Meya1.name)
+
+#Second subclass.
+class Cat:
+    speak = 'meow'
+   
+
+    
+     
+#Second variable just speaking what the cat will say. 
+Meya2 = Animal("Cat: MEOWWWWWW!! :3 " )
+
+
+print(Meya2.name)
 """
 Task 3: Banking
 Create a class BankAccount with attributes balance and owner. 
@@ -47,13 +75,29 @@ Test these methods with instances of the class.
 """
 print()
 print("Task 3")
+#Cretaed the bank account class with attributes self owner and balance.
 class BankAccount:
-    def __init__(self, owner):
-       self.owner = owner
-       self.balance = 0
+    def __init__(self, owner , balance):
+        self.owner = owner
+        self.balance = balance
 
-def deposit(self,amount):
-       self.balance = self.balance + amount
-       print(self.owner + "deposited" + str(amount))
+#Just made a function for my class using the self and amount for both depositing and withdrawing.
+    def deposit(self, amount):
+        self.balance += amount
+        print("Deposited:", amount)
 
+    def withdraw(self, amount):
+        if amount <= self.balance:
+            self.balance -= amount
+            print("Withdrew:", amount)
+        
+        else:
+            print("Not enough balance sorry!")
 
+#I created a variable called "account". 
+account = BankAccount("Valerie", 65)
+
+#These are the methods for testing the class. I included different amounts.
+account.deposit(70) # <--First depositing $70.
+account.withdraw(40)  #Then <-- Subtracting $30.
+account.withdraw(100)# It is now trying to withdraw too much money.
